@@ -81,6 +81,8 @@ rootfs:
       apilevel: 30
       packages: *sony_bahamut_packages
 
+
+
 ########################################################################
 # Device specific images                                               #
 ########################################################################
@@ -146,3 +148,33 @@ volla_mimameid:
   apilevel: 30
 
   packages: *volla_mimameid_packages
+
+# Samsung Galaxy S9 (Exynos) (starlte)
+samsung_starlte:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 29
+
+  packages: *samsung_starlte_packages
+
+# Samsung Galaxy S9+ (Exynos) (star2lte)
+samsung_star2lte:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 29
+
+  packages: *samsung_star2lte_packages
+
+# Samsung Galaxy Note 9 (Exynos) (crownlte)
+samsung_crownlte:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 29
+
+  packages: *samsung_crownlte_packages
